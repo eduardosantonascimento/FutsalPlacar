@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/futsal_background">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="16dp"
+                android:text="TIME CASA"
+                android:textColor="#f9fcff"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/placarCasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textAlignment="textEnd"
+                android:layout_weight="30"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingBottom="24dp"
+                android:paddingRight="20dp"
+                android:text="0"
+                android:textColor="#f9fcff"
+                android:textSize="56sp" />
+
+                <TextView
+                    android:id="@+id/amareloCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="A"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#f4e542"/>
+
+                <TextView
+                    android:id="@+id/vermelhoCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="V"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#ed1207"/>
+                <TextView
+                    android:id="@+id/faltaCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="F"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#dae3ef"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="golCasa"
+                android:padding="5dp"
+                android:text="GOOOOOOLLLLL" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cartaoAmareloCasa"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Cartão Amarelo"
+                android:background="#f4e542"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cartaoVermelhoCasa"
+                android:padding="5dp"
+                android:text="Cartão Vermelho"
+                android:background="#ed1207"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="faltaCasa"
+                android:padding="5dp"
+                android:text="FALTA" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="400dp"
+            android:background="@android:color/darker_gray"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="16dp"
+                android:text="Visitante"
+                android:textColor="#f9fcff"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/placarVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="30"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#f9fcff"
+                    android:textSize="56sp" />
+
+                <TextView
+                    android:id="@+id/amareloVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="A"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#f4e542"/>
+
+                <TextView
+                    android:id="@+id/vermelhoVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="V"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#ed1207"/>
+
+                <TextView
+                    android:id="@+id/faltaVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="F"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:background="#dae3ef"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="golVisitante"
+                android:padding="5dp"
+                android:text="GOL" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cartaoAmareloVisitante"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Cartão Amarelo"
+                android:background="#f4e542"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cartaoVermelhoVisitante"
+                android:text="Cartão Vermelho"
+                android:background="#ed1207"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="faltaVisitante"
+                android:text="Falta" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="reset_score"
+        android:text="RESET" />
+
+</RelativeLayout>
